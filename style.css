@@ -24,8 +24,7 @@ body{
     border-radius: 0.5em;
     box-shadow: 0 0.93em 1.25em rgb(0,0,0,0.3);
     margin-bottom: 3.12em;
-    display: grid;
-    grid-template-columns: 9fr 3fr;
+    display:flex;
     gap: 1em;
 }
 input,
@@ -34,12 +33,14 @@ button{
     border-radius: 0.31em;
 }
 input{
+    width: 70%;
     background-color: #EEEEFF;
     color: #080808;
     padding: 1.2em 1.25em;
     font-size: 0.87em;
 }
 button{
+    width: 30%;
     color: #FFFFFF;
     background-color: #7D56F3;
 }
@@ -67,4 +68,76 @@ p{
     font-size: 0.87em;
     color: #707070;
     font-weight: 400;
+}
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+    .container{
+        width: 60%;
+    }
+    .output-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .output-wrapper div{
+        margin-bottom: 20px;
+    }
+    .input-wrapper{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:576px) and (max-width: 768px) {
+    .container{
+        width: 60%;
+    }
+    .output-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .output-wrapper div{
+        margin-bottom: 20px;
+    }
+    .input-wrapper{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:992px) and (min-width:768) {
+    .container{
+        width: 60%;
+    }
+    .output-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .output-wrapper div{
+        margin-bottom: 20px;
+    }
+    .input-wrapper{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
 }
